@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lushcss.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+        <header>
+            <div class="logo"><h1>lus<b>h</b></h1>
+        </header>
+  
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="# home">Home</a></li>
+            <li><a href="# order">Order</a></li>
+            <li><a href="# menu">Menu</a></li>
+            <li><a href="# dishes">Dishes</a></li>
+            <li><a href="# about">About</a></li>
+            <li><a href="# review">Review</a></li>
+            </ul>
+  
+            <div>
+                <i class="fas fa-bars" id="bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+  
+                <input class="signin" type="submit" value="Sign In" name="signin">
+            <input class="signup" type="submit" value="Sign up" name="signup">
+            </div>
+        </nav>
+    
+  
+    <div class="container">
+        <h1>Order your food</h1>
+        
+            <form id="orderForm" action="submit_order.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+                <label for="quantity">Selected Food Item:</label><br>
+                <div class="container">
+                <div class="box">
+                    Veg Meals
+            </div>
+        </div>
+        
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1"><br>
+
+            
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
